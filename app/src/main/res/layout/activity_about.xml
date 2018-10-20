@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAFAFA"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_24">
+
+        <ImageView
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="@dimen/dp_64"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tvAppNameAndVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlWeb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:background="@drawable/selector_fun"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingStart="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/company_web" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:text="@string/company_web_content" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/rlTelephone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:background="@drawable/selector_fun"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingStart="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/company_telephone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:text="@string/company_telephone_content"
+                android:textColor="#82B1FF" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/rlMail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:background="@drawable/selector_fun"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingStart="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/company_mail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:text="@string/company_mail_content" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/rlWeibo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/selector_fun"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingStart="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/company_weibo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:text="@string/company_weibo_content" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_10"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:background="@drawable/selector_fun"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingEnd="@dimen/dp_10"
+            android:paddingStart="@dimen/dp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/company_address" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:text="@string/company_address_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:gravity="center"
+        android:text="@string/company_name"
+        android:textSize="@dimen/sp_10" />
+</LinearLayout>

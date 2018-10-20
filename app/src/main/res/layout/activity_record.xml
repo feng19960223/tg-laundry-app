@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_16"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvRecordNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFB23E" />
+
+            <TextView
+                android:id="@+id/tvSendUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:textColor="#FFFFB23E" />
+
+            <TextView
+                android:id="@+id/tvReceiveUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:textColor="#FFFFB23E" />
+
+            <TextView
+                android:id="@+id/tvWorkUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFB23E" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFB23E" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivQr"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_8"
+        android:text="aaaaaaaaa" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_16"
+        android:background="#F2F2F2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_8"
+        android:text="@string/rfid_info"
+        android:textColor="#FFFFB23E" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingLeft="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/rfid_type" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/rfid_count" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvRfid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_16"
+        android:gravity="center_vertical|right"
+        android:text="@string/rfid_total"
+        android:textColor="#FFFFB23E" />
+
+    <TextView
+        android:id="@+id/tvTotalNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_16"
+        android:gravity="center_vertical|right"
+        android:paddingBottom="@dimen/dp_16"
+        android:textColor="#FFFFB23E" />
+</LinearLayout>

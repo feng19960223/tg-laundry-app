@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">洗唰唰</string>
+    <string name="app_title">洗唰唰</string>
+
+    <!--title-->
+    <string name="activity_about">关于我们</string>
+    <string name="activity_login">登录</string>
+    <string name="activity_electricity">设备配置</string>
+    <string name="activity_bluetooth">蓝牙设备</string>
+    <string name="activity_rfid_send">发净</string>
+    <string name="activity_rfid_receive">收污</string>
+    <string name="activity_record">收污流水单</string>
+    <!--登录-->
+    <string name="login_hint_username">手机号码/工号/英文名字</string>
+    <string name="login_hint_password">密码</string>
+    <string name="login_button">登录</string>
+    <string name="string_username_max_hint">用户名最大长度是24</string>
+    <string name="string_password_max_hint">密码的最大长度是24</string>
+    <string name="string_username_min_hint">用户名最小长度是5</string>
+    <string name="string_password_min_hint">密码的最小长度是6</string>
+
+    <!--主页面-->
+    <string name="fun_send">发净布草</string>
+    <string name="fun_receive">收污布草</string>
+    <string name="fun_home">首页</string>
+    <string name="fun_user">我</string>
+
+    <string name="main_title_electricity">设备电量</string>
+
+    <string name="main_title_scope">范围：</string>
+    <string name="main_select_scope_hint">范围选择</string>
+    <string name="main_config_scope_failure">配置功率失败</string>
+    <array name="main_select_scope">
+        <item>0 dBm</item>
+        <item>3 dBm</item>
+        <item>6 dBm</item>
+        <item>9 dBm</item>
+        <item>12 dBm</item>
+        <item>15 dBm</item>
+        <item>18 dBm</item>
+        <item>21 dBm</item>
+        <item>24 dBm</item>
+        <item>27 dBm</item>
+        <item>30 dBm</item>
+    </array>
+
+    <string name="main_connected_hint">请先连接设备</string>
+    <string name="main_connected_title">连接设备</string>
+    <string name="main_connected_content">连接中...</string>
+    <string name="main_connected_successful">连接成功</string>
+    <string name="main_connected_failure">连接失败</string>
+
+    <!--没有连接设备时的提示和按钮文字-->
+    <string name="main_connect_hint">请您确认手机与设备蓝牙均已开启，并配对成功</string>
+    <string name="main_connect_button">连接设备</string>
+
+    <!--主页面adapter流水单状态-->
+    <string name="record_adapter_status1">待确认</string>
+    <string name="record_adapter_status2">已确认</string>
+    <string name="record_adapter_status3">已取消</string>
+    <string name="record_cancel_hint">确定要取消这条流水吗？</string>
+
+    <!--我-->
+    <string name="about">关于我们</string>
+    <string name="quit">退出登录</string>
+
+    <!--关于activity-->
+    <string name="company_name">图灵谷（北京）科技有限公司</string>
+    <string name="company_web">网址</string>
+    <string name="company_web_content">www.turingoal.com</string>
+    <string name="company_telephone">电话</string>
+    <string name="company_telephone_content">010-89942808</string>
+    <string name="company_mail">邮箱</string>
+    <string name="company_mail_content">service@turingoal.com</string>
+    <string name="company_weibo">微博</string>
+    <string name="company_weibo_content">http://weibo.com/turingoal</string>
+    <string name="company_address">地址</string>
+    <string name="company_address_content">北京昌平东亚上北10号1单元1908室</string>
+
+    <!--员工信息-->
+    <string name="user_work_id">工号：</string>
+    <string name="user_phone">手机号：</string>
+
+    <!--扫描activity-->
+    <string name="rfid_title_cancel">清空</string>
+    <string name="rfid_sendUnit">发送单位：</string>
+    <string name="rfid_receiveUnit">接收单位：</string>
+    <string name="rfid_workUser">操作员：</string>
+    <string name="rfid_time">扫描时间：</string>
+    <string name="rfid_button">生成流水单</string>
+    <string name="rfid_info">扫描信息</string>
+    <string name="rfid_type">种类</string>
+    <string name="rfid_count">数量</string>
+    <string name="rfid_total">总计</string>
+    <string name="rfid_total_number">总数：%1$s件</string>
+    <string name="rfid_generate_hint">流水单生成后，不能修改流水单信息哦！</string>
+    <string name="rfid_record_num">交接单号</string>
+    <!--框架用-->
+    <string name="common_blank"></string>
+    <string name="yes">确定</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="hint">提示</string>
+    <string name="back_return">返回</string>
+    <string name="noData">没有数据</string>
+    <string name="hint_title_select">请选择</string>
+    <string name="common_test">测试数据测试数据测试数据测试数据</string>
+    <string name="dbclick_exit">再按一次退出程序</string>
+    <string name="token_expired">登录信息已过期，请重新登录！</string>
+    <string name="empty">没有数据~</string>
+    <string name="error">出错了~</string>
+    <!--EditText可以输入的字符-->
+    <string name="ruleAZaz09">0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+    <string name="rule09">0123456789</string>
+</resources>

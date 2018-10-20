@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+apply from: 'version.gradle'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.turingoal.laundry"
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode appVersionCode
+        versionName appVersionName
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()] // butterknife
+                includeCompileClasspath = true // lombok
+            }
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            // apk_版本号_版本名称_编译时间.apk
+            outputFileName = "洗唰唰_${variant.buildType.name}_v${variant.versionName}_${releaseTime()}.apk"
+        }
+    }
+    buildTypes {
+        release {
+            debuggable false // 是否生产一个可供调试的apk
+            jniDebuggable false // 是否生产一个可供调试的Jni(C/C++)代码的apk
+            zipAlignEnabled true // Zipalign优化，发布之前一定要进行优化，提高系统和应用的运行效率，更快的读写apk中的资源，降低内存的使用
+            shrinkResources true // 移除无用的resource
+            minifyEnabled true // 开启混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+static def releaseTime() { // 打包时间
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMddHHmm')
+    return formattedDate
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support:design:27.0.2'
+    implementation 'com.android.support:cardview-v7:27.0.2'
+    implementation 'com.google.zxing:core:3.3.1' // 二维码
+    implementation 'javax.annotation:javax.annotation-api:1.2' // lombok注解
+    implementation 'org.projectlombok:lombok:1.16.20' //lombok
+    implementation 'com.blankj:utilcode:1.12.5' // 工具类包
+    implementation 'com.alibaba:fastjson:1.1.68.android' // json fastjson
+    implementation 'com.orhanobut:logger:2.1.1' // 日志
+    implementation 'com.alibaba:arouter-api:1.3.1' // arouter页面路由。需要注意的是api 要与compiler匹配使用，均使用最新版可以保证兼容
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.4' // arouter注解
+    implementation 'com.jakewharton:butterknife:8.8.1' // butterknife控件 注解绑定
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1' // butterknife注解
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.35' // 下拉刷新列表
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0' //dialog
+    implementation 'com.lzy.net:okgo:3.0.4' // okhttp-OkGo
+    implementation 'com.github.promeg:tinypinyin:2.0.3' // TinyPinyin核心包，约80KB，String转拼音
+}

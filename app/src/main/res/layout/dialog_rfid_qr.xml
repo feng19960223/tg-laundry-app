@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_16">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <ImageView
+            android:id="@+id/ivCancel"
+            android:layout_width="@dimen/dp_32"
+            android:layout_height="@dimen/dp_32"
+            android:src="@drawable/ic_cancel" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTotalNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FFFFB23E" />
+
+    <TextView
+        android:id="@+id/tvRecordNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FFFFB23E" />
+
+    <TextView
+        android:id="@+id/tvSendUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:textColor="#FFFFB23E" />
+
+    <TextView
+        android:id="@+id/tvReceiveUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:textColor="#FFFFB23E" />
+
+    <TextView
+        android:id="@+id/tvWorkUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFB23E" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFB23E" />
+
+    <ImageView
+        android:id="@+id/ivQr"
+        android:layout_width="@dimen/dp_180"
+        android:layout_height="@dimen/dp_180"
+        android:layout_marginTop="@dimen/dp_16" />
+</LinearLayout>

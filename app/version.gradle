@@ -1,0 +1,4 @@
+ext { // app等级
+    appVersionCode = 1
+    appVersionName = "1.0.0"
+}

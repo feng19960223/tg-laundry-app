@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- 主题样式 -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 启动背景 -->
+    <style name="AppTheme.appStart" parent="AppTheme.NoBar">
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <!--没有状态栏,透明启动-->
+    <style name="AppTheme.NoBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <!--用来修改android.support.design.widget.TextInputLayout的字数统计颜色，超出字数的时候-->
+    <style name="count_over_text" parent="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
+        >
+        <item name="android:textColor">#FFDF4D5E</item>
+    </style>
+    <!--用来修改android.support.design.widget.TextInputLayout的字数统计颜色,没有超出字数的时候-->
+    <style name="count_text" parent="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">>
+        <item name="android:textColor">#FF8A8A8A</item>
+    </style>
+</resources>

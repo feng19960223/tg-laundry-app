@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#50000000">
+    <!--水波纹效果，api要求5.0以上,直接写颜色会报错，必须@color写-->
+    <item android:drawable="@color/mainBg" />
+</ripple>

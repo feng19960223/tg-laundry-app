@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAFAFA"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar_main" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_32"
+        android:background="#33FFFFFF"
+        android:paddingEnd="@dimen/dp_16"
+        android:paddingStart="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_16"
+        app:counterEnabled="true"
+        app:counterMaxLength="24"
+        app:counterOverflowTextAppearance="@style/count_over_text"
+        app:counterTextAppearance="@style/count_text">
+
+        <com.turingoal.common.widget.ClearEditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="@string/ruleAZaz09"
+            android:hint="@string/login_hint_username"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33FFFFFF"
+        android:paddingEnd="@dimen/dp_16"
+        android:paddingStart="@dimen/dp_16"
+        app:counterEnabled="true"
+        app:counterMaxLength="24"
+        app:counterOverflowTextAppearance="@style/count_over_text"
+        app:counterTextAppearance="@style/count_text">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="@string/ruleAZaz09"
+            android:hint="@string/login_hint_password"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_32"
+        android:background="@drawable/bg_btn_orange_selector"
+        android:enabled="false"
+        android:text="@string/login_button"
+        android:textColor="#FFFFFFFF"
+        android:textSize="@dimen/sp_18" />
+</LinearLayout>
